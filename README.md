@@ -4,9 +4,13 @@ used t sort imports, packages, migrations, executions and many other things that
 executed in a proper order. If "A" depends on "B", you need to execute B before
 A. It's what the package does. Takes your dependency tree and gives your flat list to go through.
 
+# Installation:
+```azure
+go get -u github.com/MaciejPuczkowski/deptree@latest  
+```
 
 # Usage:
-### Tree based on strings:
+### Using strings:
 ```go
 builder := NewDepTreeBuilder()
 // add node test with dependencies to test1 and test2
